@@ -2,8 +2,8 @@
 
 ## Pantalla inicial
 
-<!-- ![start](./screenshots/start.jpg) -->
+![start](./img/screenshots/start.png)
 
 ## Pantalla de juego
 
-<!-- ![game](./screenshots/game.jpg) -->
+![game](./img/screenshots/game.png)
