@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+:root{
+    --main-color: rgb(27, 26, 92);
+    --text-color: rgb(247,253,235);
+    --message-color: rgb(203, 207, 197);
+    --button-color: rgb(65, 231, 239);
+}
+
+
+*{
+    box-sizing: border-box;
+    font-family: "Fira Sans", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    color: var(--text-color);
+    text-align: center;
+}
+
+.bold {
+    font-weight: 700;
+    font-style: normal;
+}
+
+.semi-bold {
+    font-weight: 500;
+    font-style: normal;
+}
+
+.thin {
+    font-weight: 200;
+    font-style: normal;
+}
+
+.screen-container{
+    background-color: var(--main-color);
+    padding: 2rem;
+    height: 100vh;
+    /* width: 100vw; */
+    background-attachment: fixed;
+}
+
+.screen{
+    max-width: 500px;
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#start, #score{
+    animation: rotateAndReturn 2s ease-in-out infinite;
+}
+
+.main-title{
+    font-size: 4rem;
+}
+
+.button{
+    border: none;
+    background: var(--button-color);
+    max-width: 40%;
+    color: var(--main-color);
+    padding: 0.625rem 1.25rem;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: .5s;
+    font-size: 1.2rem;
+}
+
+.button:hover, .option:hover{
+    transform: scale(1.1);
+}
+
+.message{
+    color: var(--message-color);
+    opacity: 0.8;
+}
+
+.main-img{
+    background: url(./img/stain.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 300px;
+}
+
+.question{
+    animation: growAndDwarf 2s ease-in-out infinite;
+}
+
+.option-group{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    width: 100%;
+}
+
+.option{
+    background-color: var(--text-color);
+    width: 100%;
+    padding: 1rem;
+    color: var(--main-color);
+    text-align: center;
+    border-radius: 50px;
+}
+
+.correct{
+    background-color: yellowgreen;
+    color: var(--text-color);
+}
+
+.incorrect{
+    color: var(--text-color);
+    background-color: darkred;
+}
+
+
+@keyframes rotateAndReturn {
+    0% {
+        transform: rotate(0deg); 
+    }
+    50% {
+        transform: rotate(2deg); 
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+
+@keyframes growAndDwarf {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}

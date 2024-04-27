@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
+    <title>Quizard</title>
+</head>
+<body>
+    <div class="screen-container">
+        
+        <div class="screen" id="start" >
+
+            <h1 class="main-title bold">Quizard</h1>
+            <p class="message thin">Challenge your friend and yourself with this quiz!</p>
+            <img class="main-img" src="./img/chest.png" alt="purple chest">
+            <button class="button semi-bold" onclick="startGame()">Start playing</button>
+            
+        </div>
+        <div class="screen" id="game">
+            <!-- Example -->
+            <p class="message">Question 1 out of 15</p>
+            <h2 class="question">Which continent is the biggest?</h2>
+            <div class="option-group">
+                <div class="option semi-bold" onclick=checkAnswer(0) id="0">America</div>
+                <div class="option semi-bold" onclick=checkAnswer(1) id="1">Asia</div>
+                <div class="option semi-bold" onclick=checkAnswer(2) id="2">Europe</div>
+                <div class="option semi-bold" onclick=checkAnswer(3) id="3">Oceania</div>
+            </div>
+        </div>
+
+         <div class="screen" id="score">
+            <h1 class="main-title bold">Score:</h1>
+            <p class="message thin" id="score-number">3 of 3</p>
+            <img class="main-img" src="./img/win.png" alt="purple chest" id="score-img">
+            <button class="button semi-bold" onclick="startGame()">Play again</button>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
