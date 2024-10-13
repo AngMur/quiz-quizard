@@ -1,0 +1,293 @@
+[
+    {
+      "text": "¿Qué dispositivo de alta escala de integración tiene una CPU, reloj, puertos, periféricos, fuentes de interrupción y alimentación, entre otros elementos?",
+      "answers": ["Microcontrolador", "Microprocesador", "FPGA", "Sensor"],
+      "correct": 0
+    },
+    {
+      "text": "¿Cuál es la última dirección de la memoria de datos en el ATmega328P?",
+      "answers": ["0x08FF", "0x7FFF", "0xFFFF", "0x08FF"],
+      "correct": 0
+    },
+    {
+      "text": "¿Cuál es la última dirección de la memoria de programa del ATmega328P?",
+      "answers": ["0x08FF", "0x7FFF", "0xFFFF", "0x3FFF"],
+      "correct": 1
+    },
+    {
+      "text": "¿Cuántos pines se pueden utilizar en el puerto C del ATmega328P?",
+      "answers": ["6", "7", "8", "5"],
+      "correct": 1
+    },
+    {
+      "text": "¿Qué registro se utiliza para configurar la dirección de los datos en un puerto?",
+      "answers": ["PORTx", "DDRx", "PINx", "SP"],
+      "correct": 1
+    },
+    {
+      "text": "¿Qué registro se utiliza para mostrar información en un puerto?",
+      "answers": ["DDRx", "PORTx", "PINx", "SP"],
+      "correct": 1
+    },
+    {
+      "text": "En la instrucción 'LDI R0, 0x00', ¿cuál es el error?",
+      "answers": ["R0 no es un registro válido", "LDI no puede cargar 0x00", "LDI necesita 2 operandos", "No hay error"],
+      "correct": 0
+    },
+    {
+      "text": "¿Cierto o falso? En ensamblador, un mnemónico es la abreviación de la acción a ejecutar.",
+      "answers": ["Cierto", "Falso"],
+      "correct": 0
+    },
+    {
+      "text": "¿Cierto o falso? Todas las instrucciones en ensamblador tienen al menos un operando.",
+      "answers": ["Cierto", "Falso"],
+      "correct": 1
+    },
+    {
+      "text": "¿Qué registro se utiliza para leer el valor de la entrada en un puerto?",
+      "answers": ["DDRx", "PORTx", "PINx", "SP"],
+      "correct": 2
+    },
+    {
+      "text": "Si todo el puerto B se configura como salida, ¿qué registros se utilizan para configurarlo y con qué valor?",
+      "answers": ["DDRB = 0xFF", "PORTB = 0xFF", "PINB = 0xFF", "SP = 0xFF"],
+      "correct": 0
+    },
+    {
+      "text": "Si el puerto C se configura como entrada con pull-up, ¿qué registros se utilizan para configurarlo y con qué valor?",
+      "answers": ["DDRC = 0x00, PORTC = 0xFF", "DDRC = 0xFF, PORTC = 0x00", "PINC = 0xFF", "SP = 0xFF"],
+      "correct": 0
+    },
+    {
+      "text": "¿Cuáles son las 5 terminales a las que se debe conectar VCC y GND?",
+      "answers": ["21, 22, 7, 8, 20", "8, 22, 1, 7, 20", "VCC, GND", "9, 22, 10, 11, 12"],
+      "correct": 1
+    },
+    {
+      "text": "¿Qué pines del ATmega328P están asociados a las interrupciones externas?",
+      "answers": ["PD2 y PD3", "PB0 y PB1", "PC1 y PC2", "PD4 y PD5"],
+      "correct": 0
+    },
+    {
+      "text": "¿Qué instrucción se utiliza para llamar a una subrutina?",
+      "answers": ["CALL", "JMP", "LDI", "RET"],
+      "correct": 0
+    },
+    {
+      "text": "¿Cierto o falso? El contador de programa contiene la dirección de la instrucción a ejecutar.",
+      "answers": ["Cierto", "Falso"],
+      "correct": 0
+    },
+    {
+      "text": "¿Cierto o falso? Dependiendo del tamaño de la memoria de datos, cambia la dirección del SP.",
+      "answers": ["Cierto", "Falso"],
+      "correct": 0
+    },
+    {
+      "text": "¿Qué instrucción permite direccionar a otra ubicación del programa?",
+      "answers": ["JMP", "CALL", "RET", "MOV"],
+      "correct": 0
+    },
+    {
+      "text": "En la instrucción RJMP, ¿qué no está permitido colocar en la etiqueta?",
+      "answers": ["Espacios", "Números", "Letras", "Símbolos especiales"],
+      "correct": 3
+    },
+    {
+      "text": "¿Qué instrucción realiza decrementos en ensamblador?",
+      "answers": ["DEC", "INC", "SUB", "ADD"],
+      "correct": 0
+    },
+    {
+      "text": "¿Qué instrucción es equivalente a 'SER R18'?",
+      "answers": ["CLR R18", "LDI R18, 0xFF", "NOP", "SBC R18"],
+      "correct": 1
+    },
+    {
+      "text": "¿Qué tipo de variable serían los registros de propósito general en C?",
+      "answers": ["Globales", "Locales"],
+      "correct": 1
+    },
+    {
+      "text": "¿Qué extensión de archivo se utiliza para cargar un programa al microcontrolador?",
+      "answers": [".hex", ".bin", ".exe", ".c"],
+      "correct": 0
+    },
+    {
+      "text": "¿El lenguaje ensamblador a qué nivel de programación corresponde?",
+      "answers": ["Bajo", "Medio", "Alto"],
+      "correct": 0
+    },
+    {
+      "text": "¿Cuáles son las tres características principales de una memoria?",
+      "answers": ["Capacidad, velocidad, tipo de acceso", "Tamaño, voltaje, direccionamiento", "Acceso, ancho de bus, tecnología"],
+      "correct": 0
+    },
+    {
+      "text": "Si una memoria tiene un bus de datos de 8 bits, ¿qué tamaño es su ancho de palabra?",
+      "answers": ["8 bits", "16 bits", "32 bits", "64 bits"],
+      "correct": 0
+    },
+    {
+      "text": "Si una memoria RAM tiene un bus de direcciones de 12 bits y un bus de datos de 8 bits, ¿cuánta memoria puede direccionar, expresada en bytes?",
+      "answers": ["4096 bytes", "2048 bytes", "8192 bytes", "1024 bytes"],
+      "correct": 0
+    },
+    {
+      "text": "¿Qué instrucción es equivalente a 'LDI R16, 0x00'?",
+      "answers": ["CLR R16", "SER R16", "LDI R16, 0xFF", "NOP"],
+      "correct": 0
+    },
+    {
+      "text": "Si el ATmega328P no utiliza un cristal externo, ¿cuánto tiempo tarda en ejecutarse una instrucción?",
+      "answers": ["125 ns", "1 ms", "125 ms", "16 ms"],
+      "correct": 0
+    },
+    {
+      "text": "¿Cuál es la frecuencia del reloj interno del ATmega328P?",
+      "answers": ["8 MHz", "16 MHz", "4 MHz", "32 MHz"],
+      "correct": 0
+    },
+    {
+      "text": "¿Cierto o falso? El Polling es la verificación constante de una variable.",
+      "answers": ["Cierto", "Falso"],
+      "correct": 0
+    },
+    {
+      "text": "¿Cómo se llama la bandera para INT0?",
+      "answers": ["INTF0", "TOV0", "INTF1", "OCF0"],
+      "correct": 0
+    },
+    {
+      "text": "¿Qué valor se debe cargar a la bandera INTF0 para que se limpie?",
+      "answers": ["1", "0", "255", "127"],
+      "correct": 0
+    },
+    {
+      "text": "Una bandera puede ser limpiada de dos formas, poniéndola en alto y...",
+      "answers": ["Ejecutando la ISR", "Ejecutando RET", "Ejecutando JMP", "Escribiendo un 0"],
+      "correct": 0
+    },
+    {
+      "text": "¿Qué es una ISR o RSI?",
+      "answers": ["Una rutina de servicio a interrupción", "Un registro de control", "Un contador de programa", "Una memoria temporal"],
+      "correct": 0
+    },
+    {
+      "text": "¿Qué es un flanco de bajada?",
+      "answers": ["Cambio de nivel alto a bajo", "Cambio de nivel bajo a alto", "Cambio de valor", "Reset de interrupción"],
+      "correct": 0
+    },
+    {
+      "text": "¿Qué registro se utiliza para configurar la sensibilidad a una interrupción?",
+      "answers": ["EICRA", "EIMSK", "EIFR", "SP"],
+      "correct": 0
+    },
+    {
+      "text": "¿Qué función tiene el registro EIMSK para las interrupciones externas?",
+      "answers": ["Habilitar las interrupciones", "Deshabilitar las interrupciones", "Controlar los flancos de interrupción", "Ninguna"],
+      "correct": 0
+    },
+    {
+      "text": "Para asignar el valor de uno al bit INTF0 del registro EIFR, ¿es correcta la expresión: EIFR |= 1<<INTF0?",
+      "answers": ["Sí", "No"],
+      "correct": 0
+    },
+    {
+      "text": "En el tipo de datos uint8_t en C, ¿qué significa la 'u'?",
+      "answers": ["Unsigned (sin signo)", "Unión", "Unidad", "Undefined (indefinido)"],
+      "correct": 0
+    },
+    {
+      "text": "¿Qué rango de valores puede expresar el tipo de datos uint8_t?",
+      "answers": ["0 a 255", "0 a 127", "0 a 511", "0 a 1023"],
+      "correct": 0
+    },
+    {
+      "text": "¿Qué funcionalidad tiene el dispositivo USBAsp?",
+      "answers": ["Programar microcontroladores", "Transferir datos", "Alimentar dispositivos", "Comunicar periféricos"],
+      "correct": 0
+    },
+    {
+      "text": "¿Qué limitante tiene la instrucción CPI en sus operandos?",
+      "answers": ["Solo acepta registros de R16 a R31", "Solo acepta valores de 8 bits", "Solo acepta números negativos", "Solo puede usarse en ciclos"],
+      "correct": 0
+    },
+    {
+      "text": "¿Cierto o falso? El pull-up asegura un nivel alto en el pin de entrada.",
+      "answers": ["Cierto", "Falso"],
+      "correct": 0
+    },
+    {
+      "text": "¿Qué registro se utiliza para configurar el pull-up?",
+      "answers": ["PORTx", "DDRx", "PINx", "SP"],
+      "correct": 0
+    },
+    {
+      "text": "¿Cierto o falso? Solo se puede configurar todo el puerto como salida o entrada, no de manera individual.",
+      "answers": ["Falso", "Cierto"],
+      "correct": 0
+    },
+    {
+      "text": "¿Cuáles son los dos operandos de la instrucción SBIS?",
+      "answers": ["Registro y bit", "Bit y puerto", "Puerto y valor", "Registro y puerto"],
+      "correct": 1
+    },
+    {
+      "text": "¿Cuándo sucede el desbordamiento de un registro?",
+      "answers": ["Cuando su valor excede su capacidad", "Cuando se llena de ceros", "Cuando se llena de unos", "Cuando se resta"],
+      "correct": 0
+    },
+    {
+      "text": "¿Qué instrucción se utiliza para habilitar las interrupciones globales?",
+      "answers": ["SEI", "CLI", "NOP", "JMP"],
+      "correct": 0
+    },
+    {
+      "text": "¿Cuál es el valor inicial del SP (Stack Pointer)?",
+      "answers": ["0x08FF", "0x3FFF", "0x7FFF", "0xFFFF"],
+      "correct": 0
+    },
+    {
+      "text": "Menciona tres registros de I/O.",
+      "answers": ["PORTx, DDRx, PINx", "SP, PC, R0", "ISR, TOV, SP", "JMP, CALL, RET"],
+      "correct": 0
+    },
+    {
+      "text": "¿Cuál es el valor mínimo y máximo para un registro de propósito general?",
+      "answers": ["0 a 255", "0 a 127", "0 a 511", "0 a 1023"],
+      "correct": 0
+    },
+    {
+      "text": "La instrucción LDI asigna una constante a un registro de propósito general.",
+      "answers": ["Cierto", "Falso"],
+      "correct": 0
+    },
+    {
+      "text": "¿Qué figura geométrica en un diagrama de flujo permite realizar toma de decisiones?",
+      "answers": ["Rombo", "Círculo", "Cuadrado", "Triángulo"],
+      "correct": 0
+    },
+    {
+      "text": "¿Qué instrucción permite la comparación entre dos registros?",
+      "answers": ["CP", "LDI", "MOV", "SUB"],
+      "correct": 0
+    },
+    {
+        "text": "¿Cuando se tienen interrupciones externas, cuando se ejecuta la ISR?",
+        "answers" : ["Cuando se identifica un cambio en el periferico atribuido", "Mientra el periferico este en bajo"],
+        "correct": 0
+    },
+    {
+       //PREGUNTASASJDADJADAS 
+    },
+    {
+      "text": "¿Qué representa el bit más significativo de la constante 0x3C?",
+      "answers": ["Encendido o apagado del LED 5", "Encendido o apagado del LED 7", "Encendido o apagado del LED 3", "Encendido o apagado del LED 0"],
+      "correct": 1
+    }
+]
+  
+
+  

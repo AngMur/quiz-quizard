@@ -4,23 +4,36 @@ const start = document.getElementById("start");
 const game = document.getElementById("game");
 const score = document.getElementById("score");
 
-const questions = [
-      {
-        text: "Which is the biggest continent?",
-        answers: ["Africa", "Asia", "Europe", "North America"],
-        correct: 1 // Índice de la respuesta correct
-      },
-      {
-        text: "When we walk on the moon for first time?",
-        answers: ["1969", "1972", "1965", "1975"],
-        correct: 0 // Índice de la respuesta correct
-      },
-      {
-        text: "Who painted the Mona Lisa?",
-        answers: ["Pablo Picasso", "Vincent van Gogh", "Leonardo da Vinci", "Rembrandt"],
-        correct: 2 // Índice de la respuesta correct
-      }
-];
+let questions = [];
+
+// const questions = [
+//       {
+//         text: "Which is the biggest continent?",
+//         answers: ["Africa", "Asia", "Europe", "North America"],
+//         correct: 1 // Índice de la respuesta correct
+//       },
+//       {
+//         text: "When we walk on the moon for first time?",
+//         answers: ["1969", "1972", "1965", "1975"],
+//         correct: 0 // Índice de la respuesta correct
+//       },
+//       {
+//         text: "Who painted the Mona Lisa?",
+//         answers: ["Pablo Picasso", "Vincent van Gogh", "Leonardo da Vinci", "Rembrandt"],
+//         correct: 2 // Índice de la respuesta correct
+//       }
+// ];
+
+fetch('questions.json')
+  .then(response => response.json())
+  .then(data => {
+    questions = data;
+    
+  })
+  .catch(error => console.error('Error al cargar el archivo JSON:', error));
+
+console.log(questions[0]);
+
 
 let index;
 let rightAnswers;
