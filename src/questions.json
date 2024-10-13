@@ -275,12 +275,14 @@
       "correct": 0
     },
     {
-        "text": "¿Cuando se tienen interrupciones externas, cuando se ejecuta la ISR?",
-        "answers" : ["Cuando se identifica un cambio en el periferico atribuido", "Mientra el periferico este en bajo"],
+        "text": "¿Cuándo se ejecuta la ISR cuando se tienen interrupciones externas?",
+        "answers": ["Cuando cambia el valor del periferico atribuido", "Al finalizar el programa", "Cada ciclo de reloj", "Nunca"],
         "correct": 0
     },
     {
-       //PREGUNTASASJDADJADAS 
+        "text": "Si se mostrará la constante 0x3C, ¿qué número de LED encenderán, comenzando en 0?",
+        "answers": ["0 0 1 1 1 1 1 1", "0 0 0 0 1 1 1 0", "0 0 1 1 1 0 1 0", "0 0 1 1 1 1 0 0"],
+        "correct": 3
     },
     {
       "text": "¿Qué representa el bit más significativo de la constante 0x3C?",

@@ -24,11 +24,10 @@ let questions = [];
 //       }
 // ];
 
-fetch('questions.json')
+fetch('./src/questions.json')
   .then(response => response.json())
   .then(data => {
     questions = data;
-    
   })
   .catch(error => console.error('Error al cargar el archivo JSON:', error));
 
