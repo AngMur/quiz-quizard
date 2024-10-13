@@ -295,14 +295,14 @@
         "correct": 3
     },
     {
-      "text": "¿Qué representa el bit más significativo de la constante 0x3C?",
-      "answers": ["Encendido o apagado del LED 5", "Encendido o apagado del LED 7", "Encendido o apagado del LED 3", "Encendido o apagado del LED 0"],
-      "correct": 1
+      "text": "¿Qué representa el bit más significativo?",
+      "answers": ["Creo que el bit con mayor valor "],
+      "correct": 0
     },
     {
       "text": "¿Nombre completo de tu profesor favorito?",
       "answers": ["No sé", "Efrén Malvado", "Juan Manuel Hernandez Contreras"],
-      "correct": 0
+      "correct": 2
     },
     {
       "text": "¿Grupo favorito de tu profesor favorito?",
