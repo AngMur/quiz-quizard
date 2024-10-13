@@ -71,7 +71,7 @@
     },
     {
       "text": "¿Qué instrucción se utiliza para llamar a una subrutina?",
-      "answers": ["CALL", "JMP", "LDI", "RET"],
+      "answers": ["RCALL", "JMP", "LDI", "RET"],
       "correct": 0
     },
     {
@@ -86,7 +86,7 @@
     },
     {
       "text": "¿Qué instrucción permite direccionar a otra ubicación del programa?",
-      "answers": ["JMP", "CALL", "RET", "MOV"],
+      "answers": ["RJMP", "RCALL", "RET", "MOV"],
       "correct": 0
     },
     {
@@ -96,7 +96,7 @@
     },
     {
       "text": "¿Qué instrucción realiza decrementos en ensamblador?",
-      "answers": ["DEC", "INC", "SUB", "ADD"],
+      "answers": ["DEC R18", "INC R18", "SUB R18", "ADD R18"],
       "correct": 0
     },
     {
@@ -143,6 +143,16 @@
       "text": "Si el ATmega328P no utiliza un cristal externo, ¿cuánto tiempo tarda en ejecutarse una instrucción?",
       "answers": ["125 ns", "1 ms", "125 ms", "16 ms"],
       "correct": 0
+    },
+    {
+      "text": "Si en una memoria RAM, el bus de direcciones es 12 y su bus de datos es de 8, ¿Qué cantidad de memoria puede direccionar, expresada en byte?",
+      "answers": ["2048 bytes", "4096 bytes", "8192 bytes", "16384 bytes"],
+      "correct": 1
+    },
+    {
+      "text": "¿Qué instrucción es la equivalente a LDI R16, 0X00?",
+      "answers": ["MOV R16, 0", "CLR R16", "SUBI R16, 0", "ADD R16, 0"],
+      "correct": 1
     },
     {
       "text": "¿Cuál es la frecuencia del reloj interno del ATmega328P?",
@@ -288,7 +298,23 @@
       "text": "¿Qué representa el bit más significativo de la constante 0x3C?",
       "answers": ["Encendido o apagado del LED 5", "Encendido o apagado del LED 7", "Encendido o apagado del LED 3", "Encendido o apagado del LED 0"],
       "correct": 1
+    },
+    {
+      "text": "¿Nombre completo de tu profesor favorito?",
+      "answers": ["No sé", "Efrén Malvado", "Juan Manuel Hernandez Contreras"],
+      "correct": 0
+    },
+    {
+      "text": "¿Grupo favorito de tu profesor favorito?",
+      "answers": ["No sé"],
+      "correct": 0
+    },
+    {
+      "text": "¿Canción favorita del grupo favorito de tu profesor favorito?",
+      "answers": ["No sé"],
+      "correct": 0
     }
+  
 ]
   
 
