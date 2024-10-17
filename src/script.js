@@ -108,6 +108,6 @@ function endGame(){
     const img = rightAnswers >= 2 ? "win.png" : "lose.png";
 
     document.getElementById("score-number").innerText = `${rightAnswers} of ${questions.length}`
-    document.getElementById("score-img").src = `./img/${img}`;
+    document.getElementById("score-img").src = `./src/img/${img}`;
     showScreen(score);
 }
