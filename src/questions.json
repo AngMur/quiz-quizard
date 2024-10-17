@@ -200,7 +200,7 @@
       "correct": 0
     },
     {
-      "text": "Para asignar el valor de uno al bit INTF0 del registro EIFR, ¿es correcto: EIFR|=1<<INTF0?",
+      "text": "Para asignar el valor de uno al bit INTF0 del registro EIFR, ¿es correcto: EIFR |= 1&lt;&lt;INTF0?",
       "answers": ["Sí", "No"],
       "correct": 0
     },
